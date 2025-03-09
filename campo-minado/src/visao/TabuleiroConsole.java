@@ -58,11 +58,12 @@ public class TabuleiroConsole {
 				} else if("2".equals(digitado)) {
 					tabuleiro.marcarCampo(xy.next(), xy.next());
 				}
-			}
-			
-			System.out.println("\nVocê ganhou!");
+			}			
+			System.out.println(tabuleiro);
+			System.out.println("Você ganhou!");
 		} catch (ExplosaoException e) {
-			System.out.println("\nVocê perdeu!");
+			System.out.println(tabuleiro);
+			System.out.println("Você perdeu!");
 		}
 	}
 	
